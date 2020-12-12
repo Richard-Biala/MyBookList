@@ -109,4 +109,7 @@ document.querySelector('#book-form').addEventListener('submit', (e) => {
 //Event: Remove a Bood
 document.querySelector('#book-list').addEventListener('click', (e) => {
     UI.deleteBook(e.target);
+
+    //Show success message
+    UI.showAlert('Book Removed', 'success');
 })
